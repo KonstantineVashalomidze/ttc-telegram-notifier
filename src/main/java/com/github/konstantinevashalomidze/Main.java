@@ -30,7 +30,7 @@ public class Main {
             @Override
             public void run() {
                 LocalTime now = LocalTime.now();
-                if (now.isAfter(end) && now.isBefore(start)) // I am sleeping!
+                if (now.isAfter(end) || now.isBefore(start)) // I am sleeping!
                     return;
 
                 try {
