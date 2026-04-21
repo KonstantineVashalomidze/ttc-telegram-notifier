@@ -1,5 +1,7 @@
 FROM eclipse-temurin:25-jdk
 
+ENV TZ=Asia/Tbilisi
+
 WORKDIR /app
 
 COPY ./src /app/src
